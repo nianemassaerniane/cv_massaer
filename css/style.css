@@ -259,3 +259,111 @@ span
   font-size: 0.8em; 
   color: #99e2d0;
 }
+
+/*partie   responsive avec les media queries */
+@media all and (max-width: 1000px)
+{
+  body
+  {
+    background-color: #ffffff;
+  }
+
+  header
+  {
+    width: auto;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  h2
+  {
+    height: auto;
+  }
+
+  #photo img
+{
+  margin-bottom: 1em;
+}
+
+  #photo:nth-child(1)
+  {
+    order: 2;
+    width: auto;
+    padding-bottom: 10px;
+  }
+
+  #me:nth-child(2)
+  {
+    order: 1;
+    width: auto;
+    margin: 0px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  main
+  {
+    flex-direction: column;
+    width: auto;
+    margin: auto;
+  }
+
+  aside
+  {
+    width: auto;
+    margin: auto;
+  }
+
+  #about, #contact
+  {
+    padding-bottom: 10px;
+    padding-top : 10px;
+  }
+
+  #contact p
+  {
+    text-align: center;
+  }
+
+  #leisure
+  {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  section
+  {
+    width: auto;
+    margin: auto;
+    padding: 15px;
+  }
+
+  .title_right
+  {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    padding-bottom: 0px;
+  }
+
+  .cursus
+  {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .company
+  {
+    width: auto;
+  }
+  
+  #recommendation
+  {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
